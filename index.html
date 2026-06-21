@@ -1,4 +1,4 @@
-<!DOCTYPE html><!--  This site was created in Webflow. https://webflow.com  --><!--  Last Published: Sun Jun 21 2026 08:14:45 GMT+0000 (Coordinated Universal Time)  -->
+<!DOCTYPE html><!--  This site was created in Webflow. https://webflow.com  --><!--  Last Published: Sun Jun 21 2026 08:43:31 GMT+0000 (Coordinated Universal Time)  -->
 <html data-wf-page="6a36826a706083be9f36a062" data-wf-site="6a368266706083be9f36a01e" lang="en">
 <head>
   <meta charset="utf-8">
@@ -15,97 +15,87 @@
   <link href="css/normalize.css" rel="stylesheet" type="text/css">
   <link href="css/webflow.css" rel="stylesheet" type="text/css">
   <link href="css/adrianjansenportfolio.webflow.css" rel="stylesheet" type="text/css">
-  <style>
-      html.w-mod-js:not(.w-mod-ix3) :is(.nav) {
-        visibility: hidden !important;
-      }
-    </style>
-  <script type="text/javascript">
-      ! function(o, c) {
-        var n = c.documentElement,
-          t = " w-mod-";
-        n.className += t + "js", ("ontouchstart" in o || o.DocumentTouch && c instanceof DocumentTouch) && (n.className += t + "touch")
-      }(window, document);
-    </script>
+  <style>html.w-mod-js:not(.w-mod-ix3) :is(.nav) {visibility: hidden !important;}</style>
+  <script type="text/javascript">!function(o,c){var n=c.documentElement,t=" w-mod-";n.className+=t+"js",("ontouchstart"in o||o.DocumentTouch&&c instanceof DocumentTouch)&&(n.className+=t+"touch")}(window,document);</script>
   <link href="images/favicon.ico" rel="shortcut icon" type="image/x-icon">
   <link href="images/webclip.png" rel="apple-touch-icon">
   <script type="application/ld+json">
-      {
-        "@context": "https://schema.org",
-        "@type": "ProfilePage",
-        "name": "Adrian Jansen Portfolio",
-        "url": "/",
-        "inLanguage": "en",
-        "mainEntity": {
-          "@type": "Person",
-          "name": "Adrian Jansen",
-          "email": "adrianjansen4@gmail.com",
-          "sameAs": [
-            "https://www.artstation.com/adrianjansen"
-          ],
-          "image": {
-            "@type": "ImageObject",
-            "url": "https://cdn.prod.website-files.com/6a368266706083be9f36a01e/6a36826a706083be9f36a0c5_post8.webp"
-          }
-        }
-      }
-    </script>
+{
+  "@context": "https://schema.org",
+  "@type": "ProfilePage",
+  "name": "Adrian Jansen Portfolio",
+  "url": "/",
+  "inLanguage": "en",
+  "mainEntity": {
+    "@type": "Person",
+    "name": "Adrian Jansen",
+    "email": "adrianjansen4@gmail.com",
+    "sameAs": [
+      "https://www.artstation.com/adrianjansen"
+    ],
+    "image": {
+      "@type": "ImageObject",
+      "url": "https://cdn.prod.website-files.com/6a368266706083be9f36a01e/6a36826a706083be9f36a0c5_post8.webp"
+    }
+  }
+}
+</script>
 </head>
 <body class="body">
   <div data-animation="default" class="nav w-nav" data-easing2="ease" data-wf-component-id="2bb3e920-91be-def7-1509-d38c2b3acc09" data-easing="ease" data-wf-variant-state="base" data-wf--nav--settings-theme="base" data-collapse="medium" role="banner" data-duration="0" data-doc-height="1">
     <div class="u-d-none w-embed">
       <style>
-          /* Mobile menu button animation */
-          .nav-menu_btn.w--open .cc-top {
-            transform: translateY(9px) rotate(45deg);
-          }
-          .nav-menu_btn.w--open .cc-middle {
-            opacity: 0;
-            transform: translateY(0);
-          }
-          .nav-menu_btn.w--open .cc-bottom {
-            transform: translateY(-9px) rotate(-45deg);
-          }
-          /* When a nav dropdown is open.. */
-          /* ..Rotate narrow */
-          .nav-link.w--open .nav-dropdown_arrow {
-            transform: rotate(180deg)
-          }
-          /* ..Show overlay on desktop */
-          @media (min-width: 992px) {
-            .nav-menu:has(.nav-link.w--open) .nav-dropdown_overlay {
-              display: block;
-            }
-          }
-          /* Lock body scroll when mobile nav is open */
-          body:has(.w-nav-button.w--open) {
-            overflow: hidden;
-          }
-          /* Nav CTA wrapper mode when nav menu hidden */
-          @media (min-width: 992px) {
-            .nav-menu+.nav-cta-wrapper {
-              margin-left: 0;
-            }
-          }
-        </style>
+	/* Mobile menu button animation */
+  .nav-menu_btn.w--open .cc-top {
+    transform: translateY(9px) rotate(45deg);
+  }
+  .nav-menu_btn.w--open .cc-middle {
+    opacity: 0;
+    transform: translateY(0);
+  }
+  .nav-menu_btn.w--open .cc-bottom {
+    transform: translateY(-9px) rotate(-45deg);
+  }
+  /* When a nav dropdown is open.. */
+  /* ..Rotate narrow */
+  .nav-link.w--open .nav-dropdown_arrow {
+    transform: rotate(180deg)
+  }
+  /* ..Show overlay on desktop */
+  @media (min-width: 992px) {
+    .nav-menu:has(.nav-link.w--open) .nav-dropdown_overlay {
+      display: block;
+    }
+  }
+  /* Lock body scroll when mobile nav is open */
+  body:has( .w-nav-button.w--open) {
+    overflow: hidden;
+  }
+  /* Nav CTA wrapper mode when nav menu hidden */
+  @media (min-width: 992px) {
+    .nav-menu + .nav-cta-wrapper {
+      margin-left: 0;
+    }
+  }
+</style>
     </div>
     <div class="u-d-none w-embed w-script">
       <script>
-          //---- Skip to <main> backup if #main anchor link isn't set ----
-          document.addEventListener('DOMContentLoaded', () => {
-            const skipLinkEle = document.getElementById('skip-link');
-            if (!skipLinkEle) return;
-            skipLinkEle.addEventListener('click', handleSkipLink);
-            skipLinkEle.addEventListener('keydown', handleSkipLink);
-          });
-          function handleSkipLink(e) {
-            if (e.type === 'keydown' && e.key !== 'Enter') return;
-            e.preventDefault();
-            const target = document.querySelector('main');
-            target.setAttribute('tabindex', '-1');
-            target.focus();
-          }
-        </script>
+	//---- Skip to <main> backup if #main anchor link isn't set ----
+  document.addEventListener('DOMContentLoaded', () => {
+    const skipLinkEle = document.getElementById('skip-link');
+    if (!skipLinkEle) return;
+    skipLinkEle.addEventListener('click', handleSkipLink);
+    skipLinkEle.addEventListener('keydown', handleSkipLink);
+  });
+  function handleSkipLink(e) {
+    if (e.type === 'keydown' && e.key !== 'Enter') return;
+    e.preventDefault();
+    const target = document.querySelector('main');
+    target.setAttribute('tabindex', '-1');
+    target.focus();
+  }
+</script>
     </div>
     <a id="skip-link" href="#main" class="nav-skip-link">Skip to Main Content</a>
     <div class="text-block-2">ADRIAN JANSEN</div>
@@ -162,28 +152,28 @@
                   <div class="w-slider-mask">
                     <div class="gallery-slide-wrapper w-slide">
                       <a href="#" target="_blank" class="w-inline-block">
-                        <div class="gallery-slide-image">
-                          <h3 class="gallery-slide-text">Slide 1</h3><img sizes="100vw" srcset="images/post11-p-500.webp 500w, images/post11-p-800.webp 800w, images/post11-p-1080.webp 1080w, images/post11-p-1600.webp 1600w, images/post11.webp 2000w" src="images/post11.webp" loading="lazy" alt="Stylized mountain peak with a building on top, surrounded by trees and rocky terrain under a blue sky." class="gallery-image-2">
+                        <div class="gallery-slide-image"><img sizes="(max-width: 2000px) 100vw, 2000px" srcset="images/post11-p-500.webp 500w, images/post11-p-800.webp 800w, images/post11-p-1080.webp 1080w, images/post11-p-1600.webp 1600w, images/post11.webp 2000w" src="images/post11.webp" loading="lazy" alt="Stylized mountain peak with a building on top, surrounded by trees and rocky terrain under a blue sky." class="gallery-image-2">
+                          <h3 class="gallery-slide-text">Slide 1</h3>
                         </div>
                       </a>
                     </div>
                     <div class="gallery-slide-wrapper w-slide">
                       <a href="#" target="_blank" class="w-inline-block">
-                        <div class="gallery-slide-image"><img sizes="100vw" srcset="images/post13-p-500.webp 500w, images/post13-p-800.webp 800w, images/post13-p-1080.webp 1080w, images/post13-p-1600.webp 1600w, images/post13.webp 2000w" src="images/post13.webp" loading="lazy" alt="Winding blue road through orange and green hills under a bright blue sky with clouds." class="gallery-image-2">
+                        <div class="gallery-slide-image"><img sizes="(max-width: 2000px) 100vw, 2000px" srcset="images/post13-p-500.webp 500w, images/post13-p-800.webp 800w, images/post13-p-1080.webp 1080w, images/post13-p-1600.webp 1600w, images/post13.webp 2000w" src="images/post13.webp" loading="lazy" alt="Winding blue road through orange and green hills under a bright blue sky with clouds." class="gallery-image-2">
                           <h3 class="gallery-slide-text">Slide 2</h3>
                         </div>
                       </a>
                     </div>
                     <div class="gallery-slide-wrapper w-slide">
                       <a href="#" target="_blank" class="w-inline-block">
-                        <div class="gallery-slide-image"><img id="w-node-_625e7338-3359-43b6-01a1-d5891fa1e3d7-9f36a062" sizes="100vw" src="images/post12.webp" loading="lazy" alt="Long rural road with potholes running alongside fields and trees under a blue sky with clouds." srcset="images/post12-p-500.webp 500w, images/post12-p-800.webp 800w, images/post12-p-1080.webp 1080w, images/post12-p-1600.webp 1600w, images/post12.webp 2000w" class="gallery-image-2">
+                        <div class="gallery-slide-image"><img id="w-node-_625e7338-3359-43b6-01a1-d5891fa1e3d7-9f36a062" sizes="(max-width: 2000px) 100vw, 2000px" src="images/post12.webp" loading="lazy" alt="Long rural road with potholes running alongside fields and trees under a blue sky with clouds." srcset="images/post12-p-500.webp 500w, images/post12-p-800.webp 800w, images/post12-p-1080.webp 1080w, images/post12-p-1600.webp 1600w, images/post12.webp 2000w" class="gallery-image-2">
                           <h3 class="gallery-slide-text">Slide 3</h3>
                         </div>
                       </a>
                     </div>
                     <div class="gallery-slide-wrapper w-slide">
                       <a href="#" target="_blank" class="w-inline-block">
-                        <div class="gallery-slide-image"><img id="w-node-_625e7338-3359-43b6-01a1-d5891fa1e3dc-9f36a062" sizes="100vw" src="images/post4.webp" loading="lazy" alt="Stone path winding through orange grass and large blue-gray rocks beneath a clear blue sky." srcset="images/post4-p-500.webp 500w, images/post4-p-800.webp 800w, images/post4-p-1080.webp 1080w, images/post4-p-1600.webp 1600w, images/post4.webp 2000w" class="gallery-image-2">
+                        <div class="gallery-slide-image"><img id="w-node-_625e7338-3359-43b6-01a1-d5891fa1e3dc-9f36a062" sizes="(max-width: 2000px) 100vw, 2000px" src="images/post4.webp" loading="lazy" alt="Stone path winding through orange grass and large blue-gray rocks beneath a clear blue sky." srcset="images/post4-p-500.webp 500w, images/post4-p-800.webp 800w, images/post4-p-1080.webp 1080w, images/post4-p-1600.webp 1600w, images/post4.webp 2000w" class="gallery-image-2">
                           <h3 class="gallery-slide-text">Slide 4</h3>
                         </div>
                       </a>
@@ -217,19 +207,19 @@
             <div class="container-4">
               <div class="testimonial-right">
                 <h4 class="testimonial-author-name-three">Instagram</h4>
-                <a href="https://www.artstation.com/adrianjansen" target="_blank">www.artstation.com/adrianjansen</a>
+                <a href="https://www.artstation.com/adrianjansen" target="_blank" class="link-4">www.artstation.com/adrianjansen</a>
               </div>
               <div class="testimonial-right">
                 <h4 class="testimonial-author-name-three">Twitter/X</h4>
-                <a href="https://www.artstation.com/adrianjansen" target="_blank">www.artstation.com/adrianjansen</a>
+                <a href="https://www.artstation.com/adrianjansen" target="_blank" class="link-3">www.artstation.com/adrianjansen</a>
               </div>
               <div class="testimonial-right">
                 <h4 class="testimonial-author-name-three">Bluesky</h4>
-                <a href="https://www.artstation.com/adrianjansen" target="_blank">www.artstation.com/adrianjansen</a>
+                <a href="https://www.artstation.com/adrianjansen" target="_blank" class="link-2">www.artstation.com/adrianjansen</a>
               </div>
               <div class="testimonial-right">
                 <h4 class="testimonial-author-name-three">Threads</h4>
-                <a href="https://www.artstation.com/adrianjansen" target="_blank">www.artstation.com/adrianjansen</a>
+                <a href="https://www.artstation.com/adrianjansen" target="_blank" class="link-5">www.artstation.com/adrianjansen</a>
               </div>
             </div>
           </section>
@@ -243,15 +233,15 @@
             <div class="container-4">
               <div class="testimonial-right">
                 <h4 class="testimonial-author-name-three">Artstation</h4>
-                <a href="https://www.artstation.com/adrianjansen" target="_blank">artstation.com/adrianjansen</a>
+                <a href="https://www.artstation.com/adrianjansen" target="_blank" class="link">artstation.com/adrianjansen</a>
               </div>
               <div class="testimonial-right">
                 <h4 class="testimonial-author-name-three">Email</h4>
-                <a href="mailto:adrianjansen4@gmail.com?subject=Portfolio%20Inquiry">adrianjansen4@gmail.com</a>
+                <a href="mailto:adrianjansen4@gmail.com?subject=Portfolio%20Inquiry" class="link-6">adrianjansen4@gmail.com</a>
               </div>
               <div class="testimonial-right">
                 <h4 class="testimonial-author-name-three">Slack or Discord?</h4>
-                <a href="#" target="_blank">Username</a>
+                <a href="#" target="_blank" class="link-7">Username</a>
               </div>
             </div>
           </section>
@@ -277,7 +267,7 @@
         </div>
         <div class="u-border u-mt-md u-mb-md"></div>
         <div class="row row-justify-between">
-          <div>© <span data-footer-year="">2026</span> Adrian Jansen</div>
+          <div class="text-block-3">© <span data-footer-year="">2026</span> Adrian Jansen</div>
         </div>
       </div>
     </section>
@@ -288,13 +278,13 @@
   <script src="https://cdn.prod.website-files.com/gsap/3.15.0/ScrollTrigger.min.js" type="text/javascript"></script>
   <script src="https://min30327.github.io/luxy.js/dist/js/luxy.js"></script>
   <script charset="utf-8">
-      var isMobile = /iPhone|iPad|Android/i.test(navigator.userAgent);
-      if (!isMobile) {
-        luxy.init({
-          wrapper: '#luxy',
-          wrapperSpeed: 0.065,
-        });
-      }
-    </script>
+ var isMobile = /iPhone|iPad|Android/i.test(navigator.userAgent);
+ if (!isMobile) {
+      luxy.init({
+        wrapper: '#luxy',
+        wrapperSpeed: 0.065,
+    });
+ }
+ </script>
 </body>
 </html>
