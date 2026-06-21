@@ -2787,6 +2787,7 @@ figcaption {
 }
 
 .about-section {
+  float: left;
   grid-column-gap: 0px;
   grid-row-gap: 0px;
   opacity: 1;
@@ -2796,18 +2797,20 @@ figcaption {
   grid-auto-columns: 1fr;
   justify-content: flex-start;
   align-self: flex-start;
-  align-items: flex-start;
+  align-items: center;
   width: 1px;
-  height: 1px;
+  height: 1300px;
   margin-top: -190px;
   margin-bottom: 190px;
   display: block;
+  position: static;
 }
 
 .portfolio-section {
+  float: left;
   align-self: flex-start;
-  width: 0;
-  height: 0;
+  width: 1px;
+  height: 1200px;
   margin-top: -64px;
   margin-bottom: 64px;
 }
