@@ -279,6 +279,7 @@ li {
 }
 
 img {
+  width: 128px;
   max-width: 100%;
   display: inline-block;
 }
@@ -2591,9 +2592,11 @@ figcaption {
 .centered-heading-2.margin-bottom-32px {
   font-weight: var(--_typography---paragraph-xl--font-weight);
   color: var(--_color---neutral--white);
-  justify-content: flex-start;
+  flex-flow: column;
+  justify-content: space-between;
   align-self: flex-start;
   align-items: flex-start;
+  margin-top: 0;
   margin-bottom: 0;
   display: flex;
 }
@@ -3122,6 +3125,66 @@ figcaption {
   display: none;
 }
 
+.image {
+  width: auto;
+  max-width: 33%;
+}
+
+.paragraph-2 {
+  flex-flow: row;
+  flex: 0 auto;
+  justify-content: flex-start;
+  align-items: stretch;
+  margin-top: 0;
+  margin-left: 10px;
+  display: block;
+}
+
+.div-block-5 {
+  flex-flow: wrap;
+  margin-top: 15px;
+  padding-top: 0;
+  display: flex;
+}
+
+.paragraph-1 {
+  min-width: 0;
+  margin-left: 12.5px;
+  margin-right: 0;
+  display: flex;
+}
+
+.div-block-6 {
+  min-width: 48%;
+  max-width: 50%;
+  display: flex;
+}
+
+.image-2 {
+  width: 64px;
+  height: 64px;
+}
+
+.div-block-7 {
+  justify-content: flex-start;
+  min-width: 48%;
+  max-width: 50%;
+  margin-top: 10px;
+  margin-left: 10px;
+  display: flex;
+}
+
+.image-3 {
+  width: 64px;
+  height: 64px;
+  display: block;
+}
+
+.div-block-8 {
+  max-width: 985px;
+  margin-top: 20px;
+}
+
 @media screen and (max-width: 991px) {
   .col.col-md-9 {
     max-width: calc(min(100%, 100% / var(--_layout---grid--columns) * 9));
@@ -3437,6 +3500,19 @@ figcaption {
 
   .gallery-slider-right-2 {
     right: -20px;
+  }
+
+  .paragraph-2 {
+    margin-top: 0;
+    margin-left: 50px;
+  }
+
+  .div-block-5 {
+    padding-top: 20px;
+  }
+
+  .paragraph-1 {
+    margin-left: 50px;
   }
 }
 
